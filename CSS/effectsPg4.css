@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+/* imported from google fonts */
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom right,#37315E, #4C2A7A);
+}
+/* Interactive header section */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transition: 1s;
+    z-index: 2;
+}
+
+header.sticky{
+    height: 80px;
+}
+
+header .banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 1s;
+}
+
+header.sticky .banner{
+    opacity: 0.5;
+}
+
+
+
+header .logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 15vw;
+    transition: 1s;
+    z-index: 1;
+
+}
+header.sticky .logo{
+    position: absolute;
+    font-size: 2rem;
+    left: 100px;
+    transform: translate(0%,-50%);
+}
+
+nav{
+    position: relative;
+    z-index: 1;
+}
+
+/* Nav link will be hidden till user scrolls down (Using opacity)*/
+nav ul{
+    position: relative;
+    transition: 0.25s;
+    transform: translateX(100px);
+    opacity: 0;
+    z-index: 1;
+    
+}
+
+nav button{
+    opacity: 0;
+}
+
+header.sticky nav button{
+    transform: translate(0);
+    opacity: 1;
+    transition-delay: 0.75s;
+    background: #4C2A7A;
+}
+
+header.sticky nav ul{
+    transform: translate(0);
+    opacity: 1;
+    transition-delay: 0.75s;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a:hover{
+    font-style: italic;
+}
+
+navbar-toggler-icon{
+    position: fixed;
+    top: 15px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 60px;
+}
+
+/* when button clicked show class appears */
+.show ul {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 20%), linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 20%), linear-gradient(to bottom right, #37315E, #4C2A7A);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.show ul li {
+    line-height: 10vh;
+}
+.show ul li a{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+/* Jumbotron section */
+.start{
+    margin-top: 30vh;
+}
+
+.jumbotron{ 
+    position: relative;
+    background-image:  linear-gradient(to top,rgba(0,0,0,0.7),transparent),linear-gradient(to bottom right,#37315E, #4C2A7A); /*from https://images2.alphacoders.com/772/772332.jpg */
+    background-size: cover;
+    /* min-height: 50vh; */
+    
+}
+
+/* Common Header: Jumbotron section */
+.jumbotron h1{
+    font: italic bold 7rem Brush Script MT, cursive; 
+}
+
+.jumbotron::after{
+    background: linear-gradient(black,transparent);
+}
+
+.start span{
+    position: absolute;
+}
+
+
+.Section1{
+    background: url(../Image/Purple_bg2.jpg);
+    background-size: cover;
+}
+
+.Section1 img{
+    object-fit: cover;
+}
+
+.Section1 p{
+    background-image: linear-gradient(to bottom right,#4C2A7A, #37315E);
+    font-size: 2.5rem;   
+    box-shadow: 10px 10px 5px #37315E;
+}
+
+.Seciton2{
+    background-image:  linear-gradient(to bottom,rgba(0,0,0,0.6),transparent 20%),linear-gradient(to top,rgba(0,0,0,0.6),transparent 20%),linear-gradient(to bottom right,#37315E, #4C2A7A);
+}
+
+.Seciton2 .card{
+    background-image:  linear-gradient(to bottom,rgba(0,0,0,0.5),transparent 20%),linear-gradient(to top,rgba(0,0,0,0.5),transparent 20%),linear-gradient(to bottom right,#37315E, #4C2A7A);
+}
+
+.Seciton2 p{
+    background-image: linear-gradient(to bottom right,#4C2A7A, #37315E);
+    font-size: 2.5rem;   
+    box-shadow: 10px 10px 5px #37315E;
+}
+
+.Seciton2 span{
+    display: none ;
+}
+
+/* CSS effects for Read more button */
+.Button_More{
+    background-image: linear-gradient(90deg,#7A007A,#4C2A7A);
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+
+/* Skills Learnt Section */
+.Section3{
+    background-image:  linear-gradient(to bottom,rgba(0,0,0,0.6),transparent 20%),linear-gradient(to top,rgba(0,0,0,0.6),transparent 20%),linear-gradient(to bottom right,#37315E, #4C2A7A);
+}
+
+
+.Section3 .card{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(to bottom right,#4C2A7A, #37315E);
+    /* background-color: red; */
+    margin: 5rem;
+
+}
+
+
+.Section3 .card-text{
+    background-image:  linear-gradient(to bottom,rgba(0,0,0,0.6),transparent 20%),linear-gradient(to top,rgba(0,0,0,0.6),transparent 20%),linear-gradient(to bottom right,#37315E, #4C2A7A);
+    box-shadow: 10px 10px 5px #37315E;
+    border-radius: 50px;
+}
+
+.modal-content{
+    background-image:  linear-gradient(to bottom,rgba(0,0,0,0.6),transparent 20%),linear-gradient(to top,rgba(0,0,0,0.6),transparent 20%),linear-gradient(to bottom right,#37315E, #4C2A7A);
+    border-radius: 50px;
+}
+
+.Section3 figure{
+    vertical-align: middle;
+    
+}
+
+.Section3 figure img{
+    max-width: 60%;
+    object-fit: contain;
+}
+
+.modal .modal-body p{
+    font-size: 1.8rem;
+}
+
+
+/* Blurs background when popout text occur */
+.Section3.active{
+    filter: blur(10px);
+}
+
+
+/* IF HAVE TIME CAN TRY HOVER EFFECT
+.card figure img{
+    opacity: 1;
+    transition: 1s;
+}
+
+.card:hover figure img{
+    opacity: 1;
+   
+} */
+
+/* Skills Learnt Styles */
+
+._h2{
+    background-color: #37315E;
+    color: white;
+    text-align: center;
+    min-height: 100px;
+    font-weight: bold;
+    font-size: 4em;
+    margin:auto;
+    border: 2px solid black;
+}
+
+
+/* Career Opportunities style */
+
+.Career{
+    background-image: linear-gradient(to bottom right,#4C2A7A, #37315E);
+    color: white;
+    margin: 0 auto;
+
+}
+.Career > h3{
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+    font-size: 3em;
+    width: 100%;
+    padding:10px 0;
+}
+.Career > p{
+    line-height: 1.5em;
+    font-size: 1.5em;
+    padding:1.5em 1em;
+    box-shadow: 10px 10px 5px #37315E;
+}
+.Career img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+    border: 6px solid black;
+}
+
+
+
+
+
+/* footer styles */
+footer{
+    font-size: 20px;
+    background-image: linear-gradient(to bottom right,#7A007A,#4C2A7A);
+}
+footer a{
+    color: rgb(180, 176, 176);
+}

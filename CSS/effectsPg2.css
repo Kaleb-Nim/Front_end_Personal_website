@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* imported from google fonts */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #37315E, #4C2A7A);
+}
+
+/* Interactive header section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transition: 1s;
+    z-index: 2;
+}
+
+header.sticky {
+    height: 80px;
+}
+
+header .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 1s;
+}
+
+header.sticky .banner {
+    opacity: 0.5;
+}
+
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vw;
+    transition: 1s;
+    z-index: 1;
+}
+
+header.sticky .logo {
+    position: absolute;
+    font-size: 2rem;
+    left: 100px;
+    transform: translate(0%, -50%);
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+/* Nav link will be hidden till user scrolls down (Using opacity)*/
+
+nav ul {
+    position: relative;
+    transition: 0.25s;
+    transform: translateX(100px);
+    opacity: 0;
+    z-index: 1;
+}
+
+nav button {
+    opacity: 0;
+}
+
+header.sticky nav button {
+    transform: translate(0);
+    opacity: 1;
+    transition-delay: 0.75s;
+    background: #4C2A7A;
+}
+
+header.sticky nav ul {
+    transform: translate(0);
+    opacity: 1;
+    transition-delay: 0.75s;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a:hover {
+    font-style: italic;
+}
+
+navbar-toggler-icon {
+    position: fixed;
+    top: 15px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 60px;
+}
+
+/* when button clicked show class appears */
+
+.show ul {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 20%), linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 20%), linear-gradient(to bottom right, #37315E, #4C2A7A);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.show ul li {
+    line-height: 10vh;
+}
+.show ul li a{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+
+/* Common Header: Jumbotron section */
+.start {
+    margin-top: 30vh;
+}
+
+.jumbotron {
+    position: relative;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), linear-gradient(to bottom right, #37315E, #4C2A7A);
+    background-size: cover;
+}
+
+/* Common Header */
+
+.jumbotron h1 {
+    font: italic bold 7rem Brush Script MT, cursive;
+}
+
+.jumbotron::after {
+    background: linear-gradient(black, transparent);
+}
+.start span{
+    position: absolute;
+ 
+}
+
+
+/* Sub-Header: Sec Sch Life  */
+.Section1 {
+    background: url(../Image/Purple_bg3.jpg);
+    background-size:cover ;
+}
+
+.Section1 p, .Seciton2 p {
+    background-image: linear-gradient(to bottom right, #4C2A7A, #37315E);
+    font-size: 2.5rem;
+    box-shadow: 10px 10px 5px #37315E;
+}
+
+
+.Seciton2,.Section3,.Section4,.Section5,.Section6,.card {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 20%), linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 20%), linear-gradient(to bottom right, #37315E, #4C2A7A);
+}
+
+.Seciton2 span {
+    display: none;
+}
+
+
+.Button_More {
+    background-image: linear-gradient(90deg, #7A007A, #4C2A7A);
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+/* Carosell Secondary School Highlights  */
+
+
+.carousel-item img {
+    max-height: 800px;
+    max-width: 800px;
+    object-fit: cover;
+}
+
+/* Headings of highlights */
+.Th{
+    font-weight: 600;
+}
+
+.carousel-caption{
+    background-image: linear-gradient(to bottom right, #4C2A7A, #37315E);
+    box-shadow: 10px 10px 5px #37315E;
+}
+
+/* footer styles */
+footer{
+    font-size: 20px;
+    background-image: linear-gradient(to bottom right,#7A007A,#4C2A7A);
+}
+footer a{
+    color: rgb(180, 176, 176);
+}

@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+/* imported from google fonts */
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to bottom right,#37315E, #4C2A7A);
+}
+
+/* Interactive header section */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transition: 1s;
+    z-index: 2;
+}
+
+header.sticky {
+    height: 80px;
+}
+
+header .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: 1s;
+}
+
+header.sticky .banner {
+    opacity: 0.5;
+}
+
+header .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15vw;
+    transition: 1s;
+    z-index: 1;
+}
+
+header.sticky .logo {
+    position: absolute;
+    font-size: 2rem;
+    left: 100px;
+    transform: translate(0%, -50%);
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+}
+
+/* Nav link will be hidden till user scrolls down (Using opacity)*/
+
+nav ul {
+    position: relative;
+    transition: 0.25s;
+    transform: translateX(100px);
+    opacity: 0;
+    z-index: 1;
+}
+
+nav button {
+    opacity: 0;
+}
+
+header.sticky nav button {
+    transform: translate(0);
+    opacity: 1;
+    transition-delay: 0.75s;
+    background: #4C2A7A;
+}
+
+header.sticky nav ul {
+    transform: translate(0);
+    opacity: 1;
+    transition-delay: 0.75s;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a:hover {
+    font-style: italic;
+}
+
+navbar-toggler-icon {
+    position: fixed;
+    top: 15px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 60px;
+}
+
+/* when button clicked show class appears */
+.show ul {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 20%), linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 20%), linear-gradient(to bottom right, #37315E, #4C2A7A);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.show ul li {
+    line-height: 10vh;
+}
+.show ul li a{
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+/* Common Header: Jumbotron section */
+.start{
+    margin-top: 30vh;
+}
+
+.jumbotron{ 
+    background-image:  linear-gradient(to top,rgba(0,0,0,0.7),transparent),linear-gradient(to bottom right,#37315E, #4C2A7A); /*from https://images2.alphacoders.com/772/772332.jpg */
+    background-size: cover;
+}
+
+.jumbotron h1{
+    font: italic bold 7rem Brush Script MT, cursive; 
+}
+
+.start span{
+    position: absolute;
+ 
+}
+/* Button style */
+.Button_More{
+    background-image: linear-gradient(90deg,#7A007A,#4C2A7A);
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+
+
+/* About Myself Section */
+.card{
+    background-image: linear-gradient(135deg,#37315E, #4C2A7A);
+}
+
+.list-group-item{
+    background-image: linear-gradient(to bottom left,#37315E, #4C2A7A);
+}
+
+.card p{
+    font-size: 2.5rem;
+}
+
+.card h2{
+    font-size: 3.5rem;
+}
+.card li{
+    font-size: 3rem;
+}
+
+.myself{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent 20%), linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 20%), linear-gradient(to bottom right, #37315E, #4C2A7A);
+}
+
+
+/* Intro Filp card */
+.flip_C{
+    background:url(..//Image/Purple_bg1.jpg),linear-gradient(to bottom,rgba(2, 1, 1, 0.7),transparent);
+    background-blend-mode: screen;
+    background-size: cover;   
+}
+
+
+.card_photo{
+    width: 550px; 
+    height: 700px;
+    background-image: linear-gradient(to bottom right,#37315E, #4C2A7A);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, .25);
+    transition: 1s;
+    
+}
+
+.card_photo .details{
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.card_photo:hover{
+    transform: translate(50%);
+}
+
+.card_photo .imgBox{
+    position: relative;
+    z-index: 1;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: 1s;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, .25);
+}
+
+.card_photo .imgBox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+
+.card_photo:hover .imgBox{
+    transform: rotateY(-180deg);
+}
+
+
+.card_photo .imgBox img:nth-child(2){
+    transform: rotateY(180deg);
+    position: absolute;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+.card img{
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+button{
+    font-size: 5rem;
+}
+
+/* figcaption style */
+figcaption{
+    font-size: 20px;
+}
+
+/* footer styles */
+footer{
+    font-size: 20px;
+    background-image: linear-gradient(to bottom right,#7A007A,#4C2A7A);
+}
+footer a{
+    color: rgb(180, 176, 176);
+}

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SecSchool</title>
+    <meta charset="UTF-8" />
+    <link href="../CSS/reset.css" rel="stylesheet" />
+    <link href="../CSS/effectsPg2.css" rel="stylesheet" />
+    <!--Font Family from Google Fonts :font-family: 'Montserrat', sans-serif;-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap  -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer=""></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" defer=""></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer=""></script>
+</head>
+
+<body>
+
+    <!--Popout Navigation -->
+    <header class="d-flex w-100 bg-dark justify-content-end align-items-center">
+        <img src="../Image/Purple-Aesthetic-purple.png" class="w-100 h-100 banner " alt="header_bg">
+        <a href="#" class="logo text-white display-3 ">Kaleb's Page:</a>
+        <nav class="d-flex navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- <a class="navbar-brand text-white " id="testing" href="#!">Kaleb's Page: </a> -->
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                <ul class="d-flex navbar-nav mr-auto mt-2 mt-md-0">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white d-inline-block h5 " href="../HTML/index.html">Homepage<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white d-inline-block h5 " href="../HTML/SecSchool.html">Sec Sch
+                            experience<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white d-inline-block h5" href="../HTML/SOC.html">SP experience<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white d-inline-block h5"
+                            href="../HTML/Course+Career_Aspects.html">Course+Career Aspects <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white d-inline-block h5" href="../HTML/Feedback.html">Feedback</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+    <!-- Common-Header of the page  -->
+    <section class="start text-center">
+        <div class="jumbotron jumbotron-fluid mb-0">
+
+            <div class="container justify-content-center align-items-center">
+                <h1 class="display-3 text-white">Welcome to Kaleb's page</h1>
+
+            </div>
+            <button class="Button_More float-right text-center text-white p-3 " id="Btn2" onclick="changeAnime()">Change
+                Animation</button>
+        </div>
+    </section>
+
+
+
+    <!-- Sub-Heading for Sec Sch experienec -->
+    <section class="Section1 min-vh-50 py-3">
+        <div class="container ">
+            <div class="HeaderText py-2 my-3">
+                <h2 class="display-2 text-white text-center">My Secondary School life</h2>
+                <h6 class="text-center text-white display-4">(Evergreen Secondary School)</h6>
+                <p class="text-white p-3 text-center">
+                    Throughout the 4 years, I've always found myself in new and more challenging circumstances.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brief Introduction to my Sec Sch experience -->
+    <section class="Seciton2">
+        <div class="container">
+            <div class="row py-5">
+                <div class="card offset-2 col-sm-8">
+                    <img class="card-img-top" src="../Image/Evg-img.jpg" alt="Card image cap">
+                    <div class="card-body text-white p-3 text-center">
+                        <p>Due challenging experiences I faced in Sec Sch, I've grown to be a more disciplined,
+                            outspoken, and more skilled individual.<br>
+                            <span id="extra">
+                                Overall, I fully enjoyed my secondary school life and left this chapter of my life with
+                                no regrets.
+                            </span>
+                        </p>
+                        <button class="Button_More float-right text-center text-white p-3" onclick="add_info()"
+                            id="Btn1">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Highlights of 2017 using carosell -->
+    <section class="Section3">
+        <div class="row justify-content-center">
+            <div class="HeaderText text-center text-white py-5">
+                <h1 class="display-2 upp">Secondary School Highlights</h1>
+            </div>
+        </div>
+        <div class="Year_2017">
+            <div class="container offset-2 col-xl-8 pb-5" id="Sec_2017">
+                <div class="row justify-content-center Th mt-2">
+                    <h2 class="text-white display-4 my-5 ">2017</h2>
+                </div>
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active ">
+                                <img class="mx-auto d-block w-100 rounded" src="../Image/2017-orientation.jpg"
+                                    alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Sec 1 Orientation camp</h3>
+                                    <p>I was introduced to the school environment/facilities, teachers, and CCAs. The
+                                        orientation camp was also a means for us new classmates to bond over games which
+                                        ended off with a camfire event.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="mx-auto d-block h-100 text-center" src="../Image/2017-road-run - Copy.jpg"
+                                    alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Road Run 2017</h3>
+                                    <p>Every Year my school organizes a marathon run that spans 3km which involves all
+                                        students, teachers, and even parents to participate.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="mx-auto d-block w-100" src="../Image/2017-award - Copy.jpeg"
+                                    alt="Third Slide slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Geography quiz competition</h3>
+                                    <p>The Geography Quiz competition where we had to answers questions relating to the
+                                        environment as a team. We managed to win 5th place out of the 24 schools that
+                                        participated.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Highlights of 2018 using carosell -->
+    <section class="Section4">
+        <div class="row justify-content-center Th ">
+            <h2 class="text-white display-4 my-5 Th">2018</h2>
+        </div>
+
+        <div class="container offset-2 col-xl-8 pb-5" id="Sec_2018">
+            <div class="bd-example">
+                <div id="carouselExampleCaptions2" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions2" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active ">
+                            <img class="mx-auto d-block w-100 rounded" src="../Image/2018-Charity-Bazzar.jpeg"
+                                alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Charity Bazzar + racial harmony</h3>
+                                <p>Charity Bazzar was a fundraiser event where we had to set up game booths, food
+                                    stalls, and busk to raise money. I was part of both the busking team and managing
+                                    the food stalls. </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block h-100 text-center" src="../Image/2018-Crystal-growing.jpeg"
+                                alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>National Crystal Growing competition 2018</h3>
+                                <p>I had to try and grow a crystal of Ammonium cobalt(ii) sulfate using various methods
+                                    to the biggest size with a great degree of clarity.<br> Every week for 3months I had
+                                    to experiment with different factors and methods to try and achieve the best
+                                    possible crystal.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block w-100" src="../Image/2018-friend-group.jpg"
+                                alt="Third Slide slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>My close friends</h3>
+                                <p>Secondary 2 was also where I became close to 3 of my friends where we would play
+                                    online games, hang-out at each others houses and study together. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Highlights of 2019 using carosell -->
+    <section class="Section5">
+        <div class="row justify-content-center Th ">
+            <h2 class="text-white display-4 my-5 Th">2019</h2>
+        </div>
+        <div class="container offset-2 col-xl-8 pb-5" id="Sec_2019">
+            <div class="bd-example">
+                <div id="carouselExampleCaptions3" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions3" data-slide-to="0" class="ac tive"></li>
+                        <li data-target="#carouselExampleCaptions3" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active ">
+                            <img class="mx-auto d-block w-100 rounded" src="../Image/2019-camp.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Sec 3 Camp Resilience</h3>
+                                <p>3 day 2 night camp that included Activities like canoning, cooking our own meals,
+                                    high-elements, night-walk and pitching our own tent</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block h-100 text-center" src="../Image/2019-syf.jpg"
+                                alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>SYF-Guitar Ensemble 2019</h3>
+                                <p>My CCA Guitar-Ensemble performed two songs titled: <br>A cruel angel's thesis and
+                                    Tango Potpourri in the 2019-Singapore Youth Festival (SYF) </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block w-100" src="../Image/2019-competition.jpg"
+                                alt="Third Slide slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Scientific Inquiries competition</h3>
+                                <p>As a team, we had to come up with our own research question and produce a solution
+                                    for our chosen question. My team focused on a solution to reduce carbon emission
+                                    from producing concrete by creating a new type of cement.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Highlights of 2020 using carosell -->
+    <section class="Section6">
+        <div class="row justify-content-center Th ">
+            <h2 class="text-white display-4 my-5 Th">2020</h2>
+        </div>
+
+        <div class="container offset-2 col-xl-8 pb-5" id="Sec_2020">
+            <div class="bd-example">
+                <div id="carouselExampleCaptions4" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions4" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions4" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active ">
+                            <img class="mx-auto d-block w-100 rounded" src="../Image/2020-Carnival.jpg"
+                                alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>2020-CCA Open House</h3>
+                                <p>CCA Open House was a showcase event catered towards the Sec1 students and parents of
+                                    the various CCA's offered in my secondary school. On top of being the student
+                                    conductor for one of the pieces my CCA Guitar Ensemble played, I also performed a
+                                    solo fingerstyle Guitar piece.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block h-100 text-center" src="../Image/2020-Graduation.jpg"
+                                alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Graduation Day</h3>
+                                <p>The rest of the year was mostly just preparation for O-levels, which fully tested my
+                                    self-discipline. In addition to studying for O-levels, my batch specifically had to
+                                    battle against COVID-restriction that made most lessons home based.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="mx-auto d-block w-100" src="../Image/2020-O-cert.png" alt="Third Slide slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>My O-level Cert</h3>
+                                <p>Thankfully, I my EAE application to DAAA was successful and i didn't have the
+                                    pressure of acing the O-level exam to determine my future. However, I still did put
+                                    in effort to study for O-levels and managed to achieve a very good score of 5points
+                                    for L1R4 NET with 4 subjects scoring A1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions4" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions4" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="text-white text-center p-4" id="actual_footer">
+        <!-- Instargram icon taken from bootstrap icons -->
+        <address>
+            Contact me at: <a href="mailto:kaleb.nim@gmail.com">kaleb.nim@gmail.com</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg>
+            @kebabthenim
+        </address>
+
+
+    </footer>
+
+    <script src="../Javascript/main.js"></script>
+</body>
